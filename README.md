@@ -19,9 +19,9 @@ for (j = 0; j < n; ++j)
 
 分别针对三种语言：
 
-    C语言：严格结构化编程，代码习惯与编程思想以《The C Programming Language》为准。
-    Lisp语言：严格函数性编程，代码习惯与编程思想以《ANSI Common Lisp》为准，除非标准代码上面使用，自己不以任何方式使用LOOP、DO、DOLIST等循环结构。尽量形成宏模板。
-    Shell语言：脚本语言变成方式，代码风格灵活。
+* C语言：严格结构化编程，代码习惯与编程思想以《The C Programming Language》为准。
+* Lisp语言：严格函数性编程，代码习惯与编程思想以《ANSI Common Lisp》为准，除非标准代码上面使用，自己不以任何方式使用LOOP、DO、DOLIST等循环结构。尽量形成宏模板。
+* Shell语言：脚本语言变成方式，代码风格灵活。
 
 针对每一个基本算法，形成一个代码。基本算法选取规则：
 
