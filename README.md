@@ -1,7 +1,7 @@
 code-collection
 ===============
 
-A Collection of Code Fragments and Code Frameworks for Language C Lisp and Shell
+A Collection of Code Snippets and Code Frameworks in Language C Lisp and Shell
 
 从过去的经验看来，每次写代码都要参照之前写过的代码，例如结构体怎么设计、变量取什么名、那个变量什么类型好。更多情况是为了追寻统一的风格比如C要写成K&R型的，并且遵循硬件资源最省，比如sunner曾提及过：
 
