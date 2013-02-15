@@ -32,7 +32,7 @@ for (j = 0; j < n; ++j)
 
 * 针对Lisp语言：
   首先来自《ANSI Common Lisp》
-  补充来自《Structure and Interpretation of Computer Programs》（原版详见：http://mitpress.mit.edu/sicp/full-text/book/book.html，标准代码详见：http://mitpress.mit.edu/sicp/code/index.html） 及John McCarthy的相关论文
+  补充来自《Structure and Interpretation of Computer Programs》（原版详见：http://mitpress.mit.edu/sicp/full-text/book/book.html 标准代码详见：http://mitpress.mit.edu/sicp/code/index.html） 及John McCarthy的相关论文
   最后实现《Introduction to Algorithms》中所有算法
 
 * 针对Shell语言：
