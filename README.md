@@ -26,15 +26,15 @@ for (j = 0; j < n; ++j)
 针对每一个基本算法，形成一个代码。基本算法选取规则：
 
 * 针对C语言：
-  首先来自《The C Programming Language》
-  补充来自《The Practice of Programming》（标准代码详见：http://cm.bell-labs.com/cm/cs/tpop/code.html）
-  最后实现《Introduction to Algorithms》中所有算法
+  ** 首先来自《The C Programming Language》
+  ** 补充来自《The Practice of Programming》（标准代码详见：http://cm.bell-labs.com/cm/cs/tpop/code.html）
+  ** 最后实现《Introduction to Algorithms》中所有算法
 
 * 针对Lisp语言：
-  首先来自《ANSI Common Lisp》
-  补充来自《Structure and Interpretation of Computer Programs》（原版详见：http://mitpress.mit.edu/sicp/full-text/book/book.html 标准代码详见：http://mitpress.mit.edu/sicp/code/index.html ） 及John McCarthy的相关论文
-  最后实现《Introduction to Algorithms》中所有算法
+  ** 首先来自《ANSI Common Lisp》
+  ** 补充来自《Structure and Interpretation of Computer Programs》（原版详见：http://mitpress.mit.edu/sicp/full-text/book/book.html 标准代码详见：http://mitpress.mit.edu/sicp/code/index.html ） 及John McCarthy的相关论文
+  ** 最后实现《Introduction to Algorithms》中所有算法
 
 * 针对Shell语言：
-  首先来自《Advanced Bash-Scripting Guide》
-  补充来自其他应用场合
+  ** 首先来自《Advanced Bash-Scripting Guide》
+  ** 补充来自其他应用场合
