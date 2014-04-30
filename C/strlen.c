@@ -1,4 +1,4 @@
-/* strlen: return length of s */
+/* strlen:  return length of s */
 int strlen(char s[])
 {
     int i;
