@@ -1,7 +1,7 @@
-code-collection
-===============
+code-base
+=========
 
-A Collection of Code Snippets and Code Frameworks in Language C Lisp and Shell
+A Collection of Code Snippets and Code Frameworks in Language C Shell and Common Lisp
 
 从过去的经验看来，每次写代码都要参照之前写过的代码，例如结构体怎么设计、变量取什么名、那个变量什么类型好。更多情况是为了追寻统一的风格比如C要写成K&R型的，并且遵循硬件资源最省，比如sunner曾提及过：
 
@@ -20,19 +20,21 @@ for (j = 0; j < n; ++j)
 分别针对三种语言：
 
 * C语言：严格结构化编程，代码习惯与编程思想以《The C Programming Language》为准。
-* Lisp语言：严格函数性编程，代码习惯与编程思想以《ANSI Common Lisp》为准，除非标准代码上面使用，自己不以任何方式使用LOOP、DO、DOLIST等循环结构。尽量形成宏模板。
-* Shell语言：脚本语言变成方式，代码风格灵活。
+* Shell语言：脚本语言编程方式，代码风格灵活。
+* Common Lisp语言：严格函数性编程，代码习惯与编程思想以《ANSI Common Lisp》为准，除非标准代码上面使用，自己不以任何方式使用LOOP、DO、DOLIST等循环结构。尽量形成宏模板。
 
-针对每一个基本算法，形成一个代码。基本算法选取规则：
+针对每一个基本算法，形成一个代码。基本算法选取：
 
 + 针对C语言：
-  * 首先来自《The C Programming Language》
-  * 补充来自《The Practice of Programming》（标准代码详见：http://cm.bell-labs.com/cm/cs/tpop/code.html）
-  * 最后实现《Introduction to Algorithms》中所有算法
-+ 针对Lisp语言：
-  * 首先来自《ANSI Common Lisp》
-  * 补充来自《Structure and Interpretation of Computer Programs》（原版详见：http://mitpress.mit.edu/sicp/full-text/book/book.html 标准代码详见：http://mitpress.mit.edu/sicp/code/index.html ） 及John McCarthy的相关论文
-  * 最后实现《Introduction to Algorithms》中所有算法
+  * 《Algorithms in C (Parts 1-4 and Part 5)》
+  * 《The C Programming Language》
+  * 《The Practice of Programming》（标准代码详见：http://cm.bell-labs.com/cm/cs/tpop/code.html）
+  * 《Introduction to Algorithms》
 + 针对Shell语言：
-  * 首先来自《Advanced Bash-Scripting Guide》
-  * 补充来自其他应用场合
+  * 《Advanced Bash-Scripting Guide》
+  * 《The Unix Programming Environment》
+  * 《Mastering Unix Shell Scripting》
++ 针对Common Lisp语言：
+  * 《ANSI Common Lisp》
+  * 《Structure and Interpretation of Computer Programs》（原版详见：http://mitpress.mit.edu/sicp/full-text/book/book.html 标准代码详见：http://mitpress.mit.edu/sicp/code/index.html ） 及John McCarthy的相关论文
+  * 《Introduction to Algorithms》
