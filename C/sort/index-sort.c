@@ -41,23 +41,23 @@ main(int argc, char *argv[])
     for (i = 0; i < N; ++i)
         index[i] = i;
     
-    for (i = 0; i< N; ++i) printf("%3d", data[i]);
+    for (i = 0; i < N; ++i) printf("%3d", data[i]);
     putchar('\n');
     
     sort(data, index, 0, N - 1);
     
-    for (i = 0; i< N; ++i) printf("%3d", data[i]);
+    for (i = 0; i < N; ++i) printf("%3d", data[i]);
     putchar('\n');
     
-    for (i = 0; i< N; ++i) printf("%3d", index[i]);
+    for (i = 0; i < N; ++i) printf("%3d", index[i]);
     putchar('\n');
     
-    for (i = 0; i< N; ++i) printf("%3d", data[index[i]]);
+    for (i = 0; i < N; ++i) printf("%3d", data[index[i]]);
     putchar('\n');
 
     instu(data, index, N);
     
-    for (i = 0; i< N; ++i) printf("%3d", data[i]);
+    for (i = 0; i < N; ++i) printf("%3d", data[i]);
     putchar('\n');
     
     return 0;

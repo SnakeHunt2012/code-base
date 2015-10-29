@@ -26,15 +26,15 @@ main(int argc, char *argv[])
     for (i = 0; i < N; ++i)
         address[i] = &data[i];
     
-    for (i = 0; i< N; ++i) printf("%3d", data[i]);
+    for (i = 0; i < N; ++i) printf("%3d", data[i]);
     putchar('\n');
     
     sort(address, 0, N - 1);
     
-    for (i = 0; i< N; ++i) printf("%3d", data[i]);
+    for (i = 0; i < N; ++i) printf("%3d", data[i]);
     putchar('\n');
     
-    for (i = 0; i< N; ++i) printf("%3d", *address[i]);
+    for (i = 0; i < N; ++i) printf("%3d", *address[i]);
     putchar('\n');
     return 0;
 }
