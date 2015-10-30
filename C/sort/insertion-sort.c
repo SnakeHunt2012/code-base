@@ -1,20 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef int Item;
-
 #define key(A) (A)
 #define less(A, B) (key(A) < key(B))
-#define exch(A, B) { Item t = A; A = B; B = t; }
+#define exch(A, B) { int t = A; A = B; B = t; }
 #define compexch(A, B) if (less(B, A)) exch(A, B)
 
 /* insertion sort */
-void sort(Item data[], int left, int right)
+void sort(int data[], int left, int right)
 {
     int i;
     for (i = right; i > left; --i) compexch(data[i - 1], data[i]);
     for (i = left + 2; i <= right; ++i) {
-        int j = i; Item value = data[i];
+        int j = i; int value = data[i];
         while (less(value, data[j - 1])) {
             data[j] = data[j - 1];
             --j;

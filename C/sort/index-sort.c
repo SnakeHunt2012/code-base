@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef int Item;
-
 #define less(A, B) (data[A] < data[B])
 #define exch(A, B) { int t = A; A = B; B = t; }
 #define compexch(A, B) if (less(B, A)) exch(A, B)

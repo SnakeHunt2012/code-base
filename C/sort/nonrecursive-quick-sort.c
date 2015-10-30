@@ -1,48 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef int Item;
-typedef struct stack_node *stack_link;
-struct stack_node {
-    Item value;
-    stack_link next;
-};
+#include "stack.h"
 
 #define key(A) (A)
 #define less(A, B) (key(A) < key(B))
-#define exch(A, B) { Item t = A; A = B; B = t; }
+#define exch(A, B) { int t = A; A = B; B = t; }
 #define compexch(A, B) if (less(B, A)) exch(A, B)
 #define push(A, B) stack_push(B); stack_push(A);
 
-static stack_link head = NULL;
-
-int stack_empty(void)
+int partition(int data[], int left, int right)
 {
-    return head == NULL;
-}
-
-void stack_push(Item value)
-{
-    stack_link node_ptr = malloc(sizeof *node_ptr);
-    node_ptr->value = value; node_ptr->next = head;
-    head = node_ptr;
-}
-
-Item stack_pop(void)
-{
-    Item value;
-    stack_link node_ptr = head;
-    if (!head)
-        return -1;
-    value = head->value;
-    head = head->next;
-    free(node_ptr);
-    return value;
-}
-
-int partition(Item data[], int left, int right)
-{
-    int i = left - 1, j = right; Item value = data[right];
+    int i = left - 1, j = right; int value = data[right];
     for (;;) {
         while (less(data[++i], value)) ;
         while (less(value, data[--j])) if (j == left) break;
@@ -53,7 +21,7 @@ int partition(Item data[], int left, int right)
     return i;
 }
 
-int quicksort(Item data[], int left, int right)
+int quicksort(int data[], int left, int right)
 {
     int i;
     push(left, right);
@@ -71,7 +39,7 @@ int quicksort(Item data[], int left, int right)
     }
 }
 
-void sort(Item data[], int left, int right)
+void sort(int data[], int left, int right)
 {
     quicksort(data, left, right);
 }

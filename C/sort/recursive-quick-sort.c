@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef int Item;
-
 #define key(A) (A)
 #define less(A, B) (key(A) < key(B))
-#define exch(A, B) { Item t = A; A = B; B = t; }
+#define exch(A, B) { int t = A; A = B; B = t; }
 #define compexch(A, B) if (less(B, A)) exch(A, B)
 
-int partition(Item data[], int left, int right)
+int partition(int data[], int left, int right)
 {
-    int i = left - 1, j = right; Item value = data[right];
+    int i = left - 1, j = right; int value = data[right];
     for (;;) {
         while (less(data[++i], value)) ;
         while (less(value, data[--j])) if (j == left) break;
@@ -21,7 +19,7 @@ int partition(Item data[], int left, int right)
     return i;
 }
 
-void quicksort(Item data[], int left, int right)
+void quicksort(int data[], int left, int right)
 {
     int i;
     if (right <= left) return;
@@ -30,7 +28,7 @@ void quicksort(Item data[], int left, int right)
     quicksort(data, i + 1, right);
 }
 
-void sort(Item data[], int left, int right)
+void sort(int data[], int left, int right)
 {
     quicksort(data, left, right);
 }

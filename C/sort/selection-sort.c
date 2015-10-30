@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef int Item;
-
 #define key(A) (A)
 #define less(A, B) (key(A) < key(B))
-#define exch(A, B) { Item t = A; A = B; B = t; }
+#define exch(A, B) { int t = A; A = B; B = t; }
 #define compexch(A, B) if (less(B, A)) exch(A, B)
 
 /* selection sort */
-void sort(Item data[], int left, int right)
+void sort(int data[], int left, int right)
 {
     int i, j;
     for (i = left; i < right; ++i) {
