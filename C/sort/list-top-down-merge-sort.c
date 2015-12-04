@@ -25,7 +25,7 @@ link merge(link a, link b)
     return head.next;
 }
 
-link merge_sort(link list)
+link sort(link list)
 {
     link a, b;
     if (!list || !list->next)
@@ -39,7 +39,7 @@ link merge_sort(link list)
     }
     b = list->next;
     list->next = NULL;
-    return merge(merge_sort(a), merge_sort(b));
+    return merge(sort(a), sort(b));
 }
 
 int main(int argc, char *argv[])
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
         printf("%3d", list[i]);
     putchar('\n');
     
-    list = merge_sort(list);
+    list = sort(list);
 
     /* print merged list */
     for (index = list; index; index = index->next)
