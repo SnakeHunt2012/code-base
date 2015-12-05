@@ -1,7 +1,12 @@
 #include <stdlib.h>
 #include "stack.h"
 
-static stack_link head = NULL;
+static stack_link head;
+
+void stack_init()
+{
+    head = NULL;
+}
 
 int stack_empty(void)
 {

@@ -7,6 +7,7 @@ struct stack_node {
     stack_link next;
 };
 
+void stack_init();
 int stack_empty();
 void stack_push(int value);
 int stack_pop();

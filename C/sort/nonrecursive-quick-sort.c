@@ -24,6 +24,7 @@ int partition(int data[], int left, int right)
 int quicksort(int data[], int left, int right)
 {
     int i;
+    stack_init();
     push(left, right);
     while (!stack_empty()) {
         left = stack_pop(); right = stack_pop();
