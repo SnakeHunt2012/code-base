@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
     
     list = sort(list);
 
-    /* print merged list */
+    /* print sorted list */
     for (index = list; index; index = index->next)
         printf("%3d", index->value);
     putchar('\n');
